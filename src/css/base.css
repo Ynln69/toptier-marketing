@@ -27,6 +27,6 @@ body {
   }
 }
 .section {
-  padding-top: clamp(40px, calc(10px + 5vw), 60px);
-  padding-bottom: clamp(40px, calc(10px + 5vw), 60px);
+  padding-top: clamp(40px, calc(10px + 5vw), 100px);
+  padding-bottom: clamp(40px, calc(10px + 5vw), 100px);
 }

@@ -1,0 +1,69 @@
+.heroSection {
+  padding-top: 162px;
+  padding-bottom: 100px;
+}
+.heroTitle {
+  position: relative;
+  margin-bottom: 60px;
+
+  font-weight: 600;
+  font-size: clamp(2.188rem, 1.433vw + 1.836rem, 3.125rem);
+  line-height: clamp(3.5rem, 2.292vw + 2.937rem, 5rem);
+  &::before {
+    position: absolute;
+    content: '';
+    background-image: url(../../img/before_title_yelow.svg);
+    top: -40px;
+    left: -55px;
+    width: 95px;
+    height: 95px;
+  }
+}
+.heroSubText {
+  position: relative;
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background-color: #f3e200;
+  }
+}
+.heroText {
+  margin-bottom: 35px;
+
+  font-size: 18px;
+}
+.heroList {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 20px;
+}
+
+.heroThumb {
+  position: relative;
+  width: 65px;
+  height: 65px;
+  padding-bottom: 21px;
+  margin-bottom: 20px;
+  border-radius: 50%;
+
+  background-color: #f3e200;
+
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: -21px;
+    left: 0;
+    width: 153px;
+    height: 2px;
+    background-color: #f3e200;
+  }
+}
+.heroItemText {
+  padding-top: 21px;
+  width: 100%;
+  max-width: 180px;
+}
