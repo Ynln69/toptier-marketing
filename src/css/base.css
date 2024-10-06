@@ -20,8 +20,8 @@ body {
   width: 100%;
   margin-left: auto;
   margin-right: auto;
-  padding-left: clamp(20px, calc(10px + 5vw), 130px);
-  padding-right: clamp(20px, calc(10px + 5vw), 130px);
+  padding-left: clamp(20px, calc(10px + 5vw), 165px);
+  padding-right: clamp(20px, calc(10px + 5vw), 165px);
   @media screen and (min-width: 1440px) {
     width: 1440px;
   }
