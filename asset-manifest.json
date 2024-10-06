@@ -1,16 +1,17 @@
 {
   "files": {
-    "main.css": "/toptier-marketing/static/css/main.b3fb6917.css",
-    "main.js": "/toptier-marketing/static/js/main.3e949d82.js",
+    "main.css": "/toptier-marketing/static/css/main.5357bf46.css",
+    "main.js": "/toptier-marketing/static/js/main.c893661c.js",
     "static/media/Gilroy-Regular.ttf": "/toptier-marketing/static/media/Gilroy-Regular.fa652e766b6a85a1f9cb.ttf",
     "static/media/Gilroy-Semibold.ttf": "/toptier-marketing/static/media/Gilroy-Semibold.41fa36c3c8e966b35423.ttf",
     "static/media/Gilroy-Bold.ttf": "/toptier-marketing/static/media/Gilroy-Bold.901a60fc2835c74fba67.ttf",
+    "static/media/before_title_yelow.svg": "/toptier-marketing/static/media/before_title_yelow.c2f2657d878d81faf118.svg",
     "index.html": "/toptier-marketing/index.html",
-    "main.b3fb6917.css.map": "/toptier-marketing/static/css/main.b3fb6917.css.map",
-    "main.3e949d82.js.map": "/toptier-marketing/static/js/main.3e949d82.js.map"
+    "main.5357bf46.css.map": "/toptier-marketing/static/css/main.5357bf46.css.map",
+    "main.c893661c.js.map": "/toptier-marketing/static/js/main.c893661c.js.map"
   },
   "entrypoints": [
-    "static/css/main.b3fb6917.css",
-    "static/js/main.3e949d82.js"
+    "static/css/main.5357bf46.css",
+    "static/js/main.c893661c.js"
   ]
 }
