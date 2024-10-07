@@ -3,7 +3,7 @@
   margin-bottom: 60px;
 
   font-weight: 600;
-  font-size: clamp(2.188rem, 1.433vw + 1.836rem, 3.125rem);
+  font-size: 44px;
   line-height: clamp(3.5rem, 2.292vw + 2.937rem, 5rem);
   &::before {
     position: absolute;
