@@ -1,0 +1,14 @@
+[
+    { "name": "Google Analytics 4", "category": "Analytics", "src": "GA.png" },
+    { "name": "Tableu", "category": "Analytics", "src": "Tableu.png" },
+    { "name": "Looker", "category": "Analytics", "src": "Looker.png" },
+    { "name": "Hotjar", "category": "Analytics", "src": "HotJar.png" },
+    { "name": "Google Optimize", "category": "Analytics", "src": "GO.png" },
+    { "name": "Google Tag Manager", "category": "Tools", "src": "GTM.png" },
+    { "name": "Stape", "category": "Tools", "src": "Stape.png" },
+    { "name": "OpenAI", "category": "Tools", "src": "OpenAI.png" },
+    { "name": "Binom", "category": "Tools", "src": "Binom.png" },
+    { "name": "Ahrefs", "category": "Tools", "src": "ahrefs.png" },
+    { "name": "Cloudflare", "category": "Tools", "src": "CloudFlare.png" }
+  ]
+  

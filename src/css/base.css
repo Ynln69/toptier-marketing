@@ -12,7 +12,7 @@ body {
 
   color: #fff;
   background-color: #1c1c1b;
-  font-family: "Gilroy", sans-serif;
+  font-family: 'Gilroy', sans-serif;
   font-size: 16px;
   font-weight: 400;
 }
@@ -20,13 +20,28 @@ body {
   width: 100%;
   margin-left: auto;
   margin-right: auto;
-  padding-left: clamp(20px, calc(10px + 5vw), 165px);
-  padding-right: clamp(20px, calc(10px + 5vw), 165px);
+  padding-left: clamp(20px, calc(10px + 10vw), 165px);
+  padding-right: clamp(20px, calc(10px + 10vw), 165px);
   @media screen and (min-width: 1440px) {
     width: 1440px;
   }
 }
 .section {
-  padding-top: clamp(40px, calc(10px + 5vw), 100px);
-  padding-bottom: clamp(40px, calc(10px + 5vw), 100px);
+  padding-top: clamp(40px, calc(20px + 10vw), 100px);
+  padding-bottom: clamp(40px, calc(20px + 10vw), 100px);
+}
+.mainTitle {
+  font-weight: 600;
+  font-size: clamp(1.75rem, 1.528vw + 1.375rem, 2.75rem);
+  line-height: clamp(1.925rem, 1.681vw + 1.512rem, 3.025rem);
+
+  &::before {
+    position: absolute;
+    content: '';
+    background-image: url(../img/before_title_yelow.svg);
+    top: -55px;
+    left: -65px;
+    width: 95px;
+    height: 95px;
+  }
 }
