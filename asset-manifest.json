@@ -1,20 +1,21 @@
 {
   "files": {
-    "main.css": "/toptier-marketing/static/css/main.c1d9910d.css",
-    "main.js": "/toptier-marketing/static/js/main.ba231c79.js",
+    "main.css": "/toptier-marketing/static/css/main.9819a6fd.css",
+    "main.js": "/toptier-marketing/static/js/main.c701ca0a.js",
     "static/media/Gilroy-Regular.ttf": "/toptier-marketing/static/media/Gilroy-Regular.fa652e766b6a85a1f9cb.ttf",
     "static/media/Gilroy-Semibold.ttf": "/toptier-marketing/static/media/Gilroy-Semibold.41fa36c3c8e966b35423.ttf",
     "static/media/Gilroy-Bold.ttf": "/toptier-marketing/static/media/Gilroy-Bold.901a60fc2835c74fba67.ttf",
+    "static/media/hero-vector.png": "/toptier-marketing/static/media/hero-vector.32ebad6c272ad0861d7b.png",
     "static/media/OpenAI.png": "/toptier-marketing/static/media/OpenAI.0355f87f615390c2c887.png",
     "static/media/Looker.png": "/toptier-marketing/static/media/Looker.85a32325ba802190ea40.png",
     "static/media/before_title_yelow.svg": "/toptier-marketing/static/media/before_title_yelow.c2f2657d878d81faf118.svg",
     "static/media/Tableu.png": "/toptier-marketing/static/media/Tableu.c16b8d95fbd5848df271.png",
     "index.html": "/toptier-marketing/index.html",
-    "main.c1d9910d.css.map": "/toptier-marketing/static/css/main.c1d9910d.css.map",
-    "main.ba231c79.js.map": "/toptier-marketing/static/js/main.ba231c79.js.map"
+    "main.9819a6fd.css.map": "/toptier-marketing/static/css/main.9819a6fd.css.map",
+    "main.c701ca0a.js.map": "/toptier-marketing/static/js/main.c701ca0a.js.map"
   },
   "entrypoints": [
-    "static/css/main.c1d9910d.css",
-    "static/js/main.ba231c79.js"
+    "static/css/main.9819a6fd.css",
+    "static/js/main.c701ca0a.js"
   ]
 }
