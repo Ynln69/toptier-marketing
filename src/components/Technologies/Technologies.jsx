@@ -32,28 +32,38 @@ const Technologies = () => {
       return 0;
     }
   });
+
   return (
     <section className={classNames('section')}>
-      <div className={classNames(styles['hero-wrapper'], 'container')}>
+      <div className={classNames('container')}>
         <h2 className={classNames(styles['technoTitle'], 'mainTitle')}>
           Technologies we use
         </h2>
         <nav className={styles.technoNav}>
           <button
             onClick={() => setSelectedCategory('All')}
-            className={styles.technoBtn}
+            className={classNames(
+              styles.technoBtn,
+              selectedCategory === 'All' && styles.btnActive
+            )}
           >
             All technologies
           </button>
           <button
             onClick={() => setSelectedCategory('Analytics')}
-            className={styles.technoBtn}
+            className={classNames(
+              styles.technoBtn,
+              selectedCategory === 'Analytics' && styles.btnActive
+            )}
           >
             Analytics
           </button>
           <button
             onClick={() => setSelectedCategory('Tools')}
-            className={styles.technoBtn}
+            className={classNames(
+              styles.technoBtn,
+              selectedCategory === 'Tools' && styles.btnActive
+            )}
           >
             Tools
           </button>
@@ -68,13 +78,16 @@ const Technologies = () => {
                 isIconActive(icon) ? styles.active : styles.inactive
               )}
             >
-              <img
-                src={icons[icon.src]}
-                alt={icon.name}
-                width={48}
-                height={48}
-              />
-              <p className={styles.technoText}>{icon.name}</p>
+              <div className={styles.technoWrapper}>
+                <img
+                  src={icons[icon.src]}
+                  alt={icon.name}
+                  width={48}
+                  height={48}
+                  className={styles.technoImg}
+                />
+                <p className={styles.technoText}>{icon.name}</p>
+              </div>
             </li>
           ))}
         </ul>

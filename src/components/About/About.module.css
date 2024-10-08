@@ -1,0 +1,21 @@
+.aboutTitle {
+  position: relative;
+  margin-bottom: 75px;
+  &::before {
+    position: absolute;
+    content: '';
+    background-image: url(../../img/before_title_yelow.svg);
+    top: -55px;
+    left: -65px;
+    width: 95px;
+    height: 95px;
+  }
+}
+.aboutText {
+  width: 100%;
+  max-width: 690px;
+
+  font-weight: 600;
+  font-size: clamp(0.75rem, 0.573vw + 0.609rem, 1.125rem);
+  line-height: clamp(0.9rem, 0.688vw + 0.731rem, 1.35rem);
+}

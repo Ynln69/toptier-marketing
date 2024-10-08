@@ -1,4 +1,9 @@
 import { useState, useEffect } from 'react';
+import { PiBrainDuotone } from 'react-icons/pi';
+import { PiPlugDuotone } from 'react-icons/pi';
+import { PiChartLineUpDuotone } from 'react-icons/pi';
+import { PiCoinsDuotone } from 'react-icons/pi';
+
 import classNames from 'classnames';
 import styles from './Hero.module.css';
 
@@ -30,23 +35,31 @@ const Hero = () => {
         <p className={styles.heroText}>Core competencies of the company</p>
         <ul className={styles.heroList}>
           <li className={styles.heroItem}>
-            <div className={styles.heroThumb}></div>
+            <div className={styles.heroThumb}>
+              <PiCoinsDuotone className={styles.heroThumbSvg} />
+            </div>
             <p className={styles.heroItemText}>
               Profit-focused traffic generation
             </p>
           </li>
           <li className={styles.heroItem}>
-            <div className={styles.heroThumb}></div>
+            <div className={styles.heroThumb}>
+              <PiBrainDuotone className={styles.heroThumbSvg} />
+            </div>
             <p className={styles.heroItemText}>In-depth niche knowledge</p>
           </li>
           <li className={styles.heroItem}>
-            <div className={styles.heroThumb}></div>
+            <div className={styles.heroThumb}>
+              <PiChartLineUpDuotone className={styles.heroThumbSvg} />
+            </div>
             <p className={styles.heroItemText}>
               All-in-one marketing infrastructure
             </p>
           </li>
           <li className={styles.heroItem}>
-            <div className={styles.heroThumb}></div>
+            <div className={styles.heroThumb}>
+              <PiPlugDuotone className={styles.heroThumbSvg} />
+            </div>
             <p className={styles.heroItemText}>
               Advanced analytics with technical integrations
             </p>

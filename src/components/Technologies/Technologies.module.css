@@ -2,32 +2,7 @@
   position: relative;
   margin-bottom: 72px;
 }
-.technoList {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-}
-.technoItem {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 20px;
-  padding: 15px;
-  border-radius: 5px;
-  width: 68px;
-  height: 68px;
-  box-shadow: 0 5px 16px 0 rgba(239, 239, 239, 0.1);
-  background-color: #fff;
-  position: relative;
-  transition: box-shadow 0.3s ease;
-}
-.technoItem:hover {
-  box-shadow: 0 5px 16px 0 rgba(0, 0, 0, 0.2); /* Підсвічування при ховері */
-  height: 100%;
-}
-.technoText {
-  color: #1c1c1b;
-}
+
 .technoNav {
   display: flex;
   align-items: center;
@@ -35,6 +10,7 @@
   margin-bottom: 30px;
 }
 .technoBtn {
+  position: relative;
   border: none;
 
   background-color: transparent;
@@ -42,16 +18,93 @@
   font-weight: 700;
   font-size: 18px;
   text-align: center;
+  &::after {
+    content: '';
+    display: block;
+    width: 100%;
+    position: absolute;
+    height: 4px;
+    left: 0;
+    bottom: 4px;
+    background: #f3e200;
+    z-index: -1;
+    opacity: 0;
+    transition: all 0.3s ease;
+  }
 }
+.btnActive::after,
+.technoBtn:hover::after {
+  opacity: 1;
+}
+
+.technoList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.technoItem {
+  width: 88px;
+  margin-bottom: 20px;
+  padding: 0 10px;
+  transition: all 0.3s ease;
+  order: 0;
+}
+.technoWrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 68px;
+  height: 68px;
+  margin: 0 auto;
+  box-shadow: 0px 5px 16px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+
+  background-color: #ffffff;
+  transition: all 0.3s ease;
+}
+.technoImg {
+  display: block;
+  height: auto;
+  max-width: 55px;
+  max-height: 44px;
+}
+.technoText {
+  width: 100%;
+  position: absolute;
+  top: 65px;
+  left: 0;
+  padding-bottom: 5px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  background: #ffffff;
+  box-shadow: 0px 13px 16px rgba(0, 0, 0, 0.1);
+  font-size: 12px;
+  line-height: 130%;
+  text-align: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s ease;
+  color: #1c1c1b;
+}
+.technoItem:hover .technoText {
+  opacity: 1;
+  pointer-events: initial;
+}
+.technoItem:hover .technoWrapper {
+  transform: scale(1.05);
+  z-index: 1;
+}
+
 .active {
   opacity: 1;
   filter: none;
 }
-
 .inactive {
-  opacity: 0.3; /* Зменшує прозорість неактивних іконок */
-  filter: grayscale(100%); /* Робить неактивні іконки чорно-білими */
-  pointer-events: none; /* Вимикає інтерактивність для неактивних іконок */
-  background-color: transparent;
+  opacity: 0.3;
+  filter: grayscale(100%);
+  pointer-events: none;
   box-shadow: none;
+
+  background-color: transparent;
 }

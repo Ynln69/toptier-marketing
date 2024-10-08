@@ -2,9 +2,6 @@
   position: relative;
   margin-bottom: 60px;
 
-  font-weight: 600;
-  font-size: 44px;
-  line-height: clamp(3.5rem, 2.292vw + 2.937rem, 5rem);
   &::before {
     position: absolute;
     content: '';
