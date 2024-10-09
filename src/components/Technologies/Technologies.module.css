@@ -23,9 +23,9 @@
     display: block;
     width: 100%;
     position: absolute;
-    height: 4px;
+    height: 2px;
     left: 0;
-    bottom: 4px;
+    bottom: -2px;
     background: #f3e200;
     z-index: -1;
     opacity: 0;
