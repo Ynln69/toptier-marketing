@@ -1,6 +1,6 @@
 .heroSection {
   position: relative;
-  padding-top: 162px;
+  padding-top: 200px;
   padding-bottom: 100px;
   &::after {
     content: '';
@@ -48,7 +48,7 @@
 .heroList {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  gap: 20px;
+  gap: 40px;
 }
 
 .heroThumb {
@@ -57,15 +57,16 @@
   height: 65px;
   padding-bottom: 21px;
   margin-bottom: 20px;
+  margin-left: 16px;
   border-radius: 50%;
 
-  background-color: #f3e200;
+  background-color: #272726;
 
   &::after {
     content: '';
     position: absolute;
     bottom: -21px;
-    left: 0;
+    left: -16px;
     width: 153px;
     height: 2px;
     background-color: #f3e200;
@@ -75,10 +76,16 @@
   position: absolute;
   width: 60px;
   height: 60px;
-  top: 0;
-  left: -15px;
-  fill: #6b6868;
+  top: -5px;
+  left: -20px;
+  fill: rgba(255, 255, 255, 0.7);
+  transition: fill 300ms linear;
 }
+
+.heroItem:hover .heroThumbSvg {
+  fill: #f3e200;
+}
+
 .heroItemText {
   padding-top: 21px;
   width: 100%;
