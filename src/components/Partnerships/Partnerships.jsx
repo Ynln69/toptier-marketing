@@ -2,6 +2,9 @@ import React, { useEffect, useRef } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
+import Google from '../../img/Google-Premier-Partner.png';
+import DV from '../../img/DV360-logo.png';
+
 import classNames from 'classnames';
 import styles from './Partnerships.module.css';
 
@@ -23,16 +26,30 @@ const Partnerships = ({ setRef }) => {
         >
           Partnerships
         </h2>
-        <p
-          className={styles.aboutText}
+        <ul
+          className={styles.partnerList}
           data-aos="fade-left"
           data-aos-duration="2000"
         >
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic numquam
-          nesciunt natus nulla repellat voluptatum ratione laboriosam atque
-          blanditiis veniam placeat illum harum perferendis fugiat reiciendis
-          aliquam, molestiae impedit totam.
-        </p>
+          <li className={styles.partnerItem}>
+            <div className={styles.partnerItemThumb}>
+              <div className={styles.partnerItemImg}>
+                <img src={Google} alt="" />
+              </div>
+              <div className={styles.partnerItemLine}></div>
+              <h3 className={styles.partnerItemText}>Google Premier Partner</h3>
+            </div>
+          </li>
+          <li className={styles.partnerItem}>
+            <div className={styles.partnerItemThumb}>
+              <div className={styles.partnerItemImg}>
+                <img src={DV} alt="" />
+              </div>
+              <div className={styles.partnerItemLine}></div>
+              <h3 className={styles.partnerItemText}>DV360 </h3>
+            </div>
+          </li>
+        </ul>
       </div>
     </section>
   );
