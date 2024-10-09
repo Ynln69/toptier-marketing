@@ -7,7 +7,9 @@ const Header = ({ onOpenForm }) => {
   return (
     <header className={styles.header}>
       <div className={classNames(styles['header-wrapper'], 'container')}>
-        <a href="./"> Logo </a>
+        <a className={styles.logo} href="./">
+          Toptier Marketing
+        </a>
         <nav>
           <ul className={styles.header_nav}>
             <li>
