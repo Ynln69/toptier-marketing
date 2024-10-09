@@ -3,7 +3,6 @@
   margin-bottom: 60px;
 
   font-weight: 600;
-  font-size: 44px;
   line-height: clamp(3.5rem, 2.292vw + 2.937rem, 5rem);
   &::before {
     position: absolute;
@@ -16,8 +15,9 @@
   }
 }
 
-.slide {
-  display: flex;
+.vacancies {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 30px;
 }
 
@@ -26,7 +26,6 @@
   flex-direction: column;
   justify-content: space-between;
   padding: 32px;
-  width: calc((100% - 30px) / 3);
   border-radius: 10px;
   background-color: transparent;
   box-shadow: 0px 0px 20px 0px rgba(185, 185, 185, 0.1);

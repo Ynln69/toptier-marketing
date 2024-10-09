@@ -9,7 +9,7 @@ const Vacancies = () => {
           Vacancies
         </h2>
 
-        <ul className={styles.slide}>
+        <ul className={styles.vacancies}>
           <li className={styles.vacancy}>
             <div className={styles.content}>
               <h3 className={styles.subTitle}>PPC Specialist</h3>
