@@ -82,16 +82,17 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 194px;
-  height: 55px;
-  padding: 16px;
+  /* width: 194px;
+  height: 55px; */
+  padding: 13px 20px;
+
   border-radius: 5px;
   border: 2px solid rgba(0, 0, 0, 0.05);
   background-color: #f3e200;
   line-height: 1.21;
   box-shadow: 0;
   transition: box-shadow 300ms linear;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 700;
   color: #000000;
   text-align: center;

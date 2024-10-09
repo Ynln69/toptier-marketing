@@ -70,9 +70,9 @@
     display: block;
     padding: 13px 20px;
     border: 1px solid rgba(0, 0, 0, 0.05);
-    border-radius: 4px;
+    border-radius: 5px;
     background-color: #f3e200;
-
+    color: #000000;
     font-weight: 700;
     text-align: center;
 

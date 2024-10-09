@@ -10,7 +10,7 @@ const Footer = ({ setRef }) => {
 
   useEffect(() => {
     AOS.init();
-    setRef('footer', footerRef); // Реєструємо ref для секції Footer
+    setRef('contacts', footerRef);
   }, [setRef]);
 
   return (

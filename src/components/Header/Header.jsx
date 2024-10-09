@@ -58,13 +58,14 @@ const Header = ({ onOpenForm, scrollToSection }) => {
             </li>
           </ul>
         </nav>
-        <button
-          type="button"
+
+        <a
           className={styles.header_button}
-          onClick={onOpenForm}
+          href="mailto:info@toptier-marketing.com"
         >
           Ask a Question
-        </button>
+        </a>
+
         <button type="button" className={styles.header_burger}>
           <FiMenu className={styles.burger_svg} />
         </button>
