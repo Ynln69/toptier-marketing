@@ -54,14 +54,14 @@
     width: 0;
     height: 2px;
     position: absolute;
-    bottom: 1px;
+    bottom: -2px;
     left: 0;
     background: #f3e200;
-    transition: width 0.3s ease;
+    transition: width 0.3s linear;
   }
 
   &:hover::after {
-    width: 90%;
+    width: 100%;
   }
 }
 .header_button {

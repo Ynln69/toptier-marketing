@@ -1,17 +1,20 @@
-import { useEffect } from 'react';
+import { useEffect, useRef } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
 import classNames from 'classnames';
 import styles from './Vacancies.module.css';
 
-const Vacancies = () => {
+const Vacancies = ({ setRef }) => {
+  const vacanciesRef = useRef(null);
+
   useEffect(() => {
     AOS.init();
-  }, []);
+    setRef('vacancies', vacanciesRef);
+  }, [setRef]);
 
   return (
-    <section className={classNames('section')}>
+    <section ref={vacanciesRef} className={classNames('section')}>
       <div className={classNames('container')}>
         <h2
           className={classNames(styles['vacanciesTitle'], 'mainTitle')}

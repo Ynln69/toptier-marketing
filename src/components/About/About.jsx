@@ -1,17 +1,20 @@
-import { useEffect } from 'react';
+import { useEffect, useRef } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
 import classNames from 'classnames';
 import styles from './About.module.css';
 
-const About = () => {
+const About = ({ setRef }) => {
+  const aboutRef = useRef(null);
+
   useEffect(() => {
     AOS.init();
-  }, []);
+    setRef('about', aboutRef);
+  }, [setRef]);
 
   return (
-    <section className={classNames('section')}>
+    <section ref={aboutRef} className={classNames('section')}>
       <div className={classNames('container')}>
         <h2
           className={classNames(styles['aboutTitle'], 'mainTitle')}

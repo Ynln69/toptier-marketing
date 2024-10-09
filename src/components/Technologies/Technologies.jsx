@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import iconsData from '../../data/icons.json';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -18,8 +18,14 @@ const icons = importAllIcons(
   require.context('../../img/icons/', false, /\.(png|webp|jpe?g|svg)$/)
 );
 
-const Technologies = () => {
+const Technologies = ({ setRef }) => {
   const [selectedCategory, setSelectedCategory] = useState('All');
+  const technologiesRef = useRef(null);
+
+  useEffect(() => {
+    AOS.init();
+    setRef('technologies', technologiesRef);
+  }, [setRef]);
 
   const isIconActive = icon => {
     return selectedCategory === 'All' || icon.category === selectedCategory;
@@ -35,12 +41,8 @@ const Technologies = () => {
     }
   });
 
-  useEffect(() => {
-    AOS.init();
-  }, []);
-
   return (
-    <section className={classNames('section')}>
+    <section ref={technologiesRef} className={classNames('section')}>
       <div className={classNames('container')}>
         <h2
           className={classNames(styles['technoTitle'], 'mainTitle')}
