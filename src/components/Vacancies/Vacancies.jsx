@@ -19,7 +19,9 @@ const Vacancies = () => {
                 research, and analyse performance data.
               </p>
             </div>
-            <button className={styles.btn}>Apply for a job</button>
+            <a className={styles.btn} href="mailto: info@toptier-marketing.com">
+              Apply for a job
+            </a>
           </li>
 
           <li className={styles.vacancy}>
@@ -31,7 +33,9 @@ const Vacancies = () => {
                 and analyse performance to drive growth.
               </p>
             </div>
-            <button className={styles.btn}>Apply for a job</button>
+            <a className={styles.btn} href="mailto: info@toptier-marketing.com">
+              Apply for a job
+            </a>
           </li>
 
           <li className={styles.vacancy}>
@@ -43,7 +47,9 @@ const Vacancies = () => {
                 product quality through detailed reporting.
               </p>
             </div>
-            <button className={styles.btn}>Apply for a job</button>
+            <a className={styles.btn} href="mailto: info@toptier-marketing.com">
+              Apply for a job
+            </a>
           </li>
         </ul>
       </div>
