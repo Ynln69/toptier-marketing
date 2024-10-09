@@ -3,6 +3,8 @@ import { PiBrainDuotone } from 'react-icons/pi';
 import { PiPlugDuotone } from 'react-icons/pi';
 import { PiChartLineUpDuotone } from 'react-icons/pi';
 import { PiCoinsDuotone } from 'react-icons/pi';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 import classNames from 'classnames';
 import styles from './Hero.module.css';
@@ -26,6 +28,10 @@ const Hero = () => {
     return () => clearInterval(intervalId);
   }, [fullText]);
 
+  useEffect(() => {
+    AOS.init();
+  }, []);
+
   return (
     <section className={styles.heroSection}>
       <div className={classNames(styles['hero-wrapper'], 'container')}>
@@ -34,7 +40,11 @@ const Hero = () => {
         </h1>
         <p className={styles.heroText}>Core competencies of the company</p>
         <ul className={styles.heroList}>
-          <li className={styles.heroItem}>
+          <li
+            className={styles.heroItem}
+            data-aos="fade-up"
+            data-aos-duration="500"
+          >
             <div className={styles.heroThumb}>
               <PiCoinsDuotone className={styles.heroThumbSvg} />
             </div>
@@ -42,13 +52,21 @@ const Hero = () => {
               Profit-focused traffic generation
             </p>
           </li>
-          <li className={styles.heroItem}>
+          <li
+            className={styles.heroItem}
+            data-aos="fade-up"
+            data-aos-duration="1000"
+          >
             <div className={styles.heroThumb}>
               <PiBrainDuotone className={styles.heroThumbSvg} />
             </div>
             <p className={styles.heroItemText}>In-depth niche knowledge</p>
           </li>
-          <li className={styles.heroItem}>
+          <li
+            className={styles.heroItem}
+            data-aos="fade-up"
+            data-aos-duration="1500"
+          >
             <div className={styles.heroThumb}>
               <PiChartLineUpDuotone className={styles.heroThumbSvg} />
             </div>
@@ -56,7 +74,11 @@ const Hero = () => {
               All-in-one marketing infrastructure
             </p>
           </li>
-          <li className={styles.heroItem}>
+          <li
+            className={styles.heroItem}
+            data-aos="fade-up"
+            data-aos-duration="2000"
+          >
             <div className={styles.heroThumb}>
               <PiPlugDuotone className={styles.heroThumbSvg} />
             </div>
