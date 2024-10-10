@@ -20,20 +20,20 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #fff;
-  font-size: 18px;
-  background-color: #272726;
   border-radius: 30px;
   padding: 12px 28px;
-  transition: color 300ms linear, box-shadow 300ms linear;
-  text-transform: uppercase;
-  font-weight: 600;
-}
 
-.logo:hover,
-.logo:focus {
-  color: #f3e200;
-  box-shadow: 0px 0px 20px 0px rgba(243, 226, 0, 0.8);
+  background-color: #272726;
+  color: #fff;
+  font-weight: 600;
+  font-size: 18px;
+  text-transform: uppercase;
+  transition: color 300ms linear, box-shadow 300ms linear;
+  &:hover,
+  &:focus {
+    color: #f3e200;
+    box-shadow: 0px 0px 20px 0px rgba(243, 226, 0, 0.8);
+  }
 }
 
 .header_nav {

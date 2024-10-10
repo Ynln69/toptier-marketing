@@ -1,8 +1,16 @@
-import { FiMenu } from 'react-icons/fi';
+import { useState } from 'react';
+import { FiMenu, FiX } from 'react-icons/fi'; 
 import classNames from 'classnames';
+import MobileMenu from '../MobileMenu/MobileMenu'; 
 import styles from './Header.module.css';
 
 const Header = ({ onOpenForm, scrollToSection }) => {
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setMenuOpen(!menuOpen);
+  };
+
   return (
     <header className={styles.header}>
       <div className={classNames(styles['header-wrapper'], 'container')}>
@@ -58,18 +66,29 @@ const Header = ({ onOpenForm, scrollToSection }) => {
             </li>
           </ul>
         </nav>
-
         <a
           className={styles.header_button}
           href="mailto:info@toptier-marketing.com"
         >
           Ask a Question
         </a>
-
-        <button type="button" className={styles.header_burger}>
-          <FiMenu className={styles.burger_svg} />
+        <button
+          type="button"
+          className={styles.header_burger}
+          onClick={toggleMenu}
+        >
+          {menuOpen ? (
+            <FiX className={styles.burger_svg} />
+          ) : (
+            <FiMenu className={styles.burger_svg} />
+          )}
         </button>
       </div>
+      <MobileMenu
+        isOpen={menuOpen}
+        toggleMenu={toggleMenu}
+        scrollToSection={scrollToSection}
+      />
     </header>
   );
 };
