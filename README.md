@@ -1,4 +1,5 @@
 # Toptier-Marketing Single-Page Website
+![Toptier-Marketing Homepage](../src/img/logo_white.png)
 
 This repository contains the code for the single-page website of **Toptier-Marketing**, a marketing agency. The website is built using **React**, offering a clean and modern interface to showcase the company’s services and information.
 
@@ -29,7 +30,6 @@ This project implements a responsive design for smooth user experience across de
 
 ## Technologies
 - **React**: JavaScript library for building the UI
-- **React Router**: For navigation between different sections
 - **Material-UI**: For consistent, modern styling and responsive layout
 - **Axios**: For potential API integration
 - **Node.js** and **npm**: For managing dependencies and development environment
