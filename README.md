@@ -1,5 +1,5 @@
 # Toptier-Marketing Single-Page Website
-![Toptier-Marketing Homepage](../src/img/logo_white.png)
+![Toptier-Marketing Homepage](./src/img/logo_white.png)
 
 This repository contains the code for the single-page website of **Toptier-Marketing**, a marketing agency. The website is built using **React**, offering a clean and modern interface to showcase the company’s services and information.
 
