@@ -62,7 +62,7 @@ const ContactForm = ({ onClose }) => {
               className={styles.formInput}
             />
             <input
-              type="number"
+              type="phone"
               name="number"
               placeholder="Phone number"
               value={formData.number}
