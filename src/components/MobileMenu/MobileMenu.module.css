@@ -21,23 +21,7 @@
   justify-content: space-between;
   margin-bottom: 40px;
 }
-.menuLink {
-  display: block;
-  border-radius: 30px;
-  padding: 12px 28px;
 
-  background-color: #272726;
-  color: #fff;
-  font-weight: 600;
-  font-size: 18px;
-  text-transform: uppercase;
-  transition: color 300ms linear, box-shadow 300ms linear;
-  &:hover,
-  &:focus {
-    color: #f3e200;
-    box-shadow: 0px 0px 20px 0px rgba(243, 226, 0, 0.8);
-  }
-}
 .closeBtn {
   border: none;
   background-color: transparent;

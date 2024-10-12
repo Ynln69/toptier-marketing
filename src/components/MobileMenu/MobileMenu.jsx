@@ -1,17 +1,18 @@
 import React from 'react';
 import { FiX } from 'react-icons/fi';
+
+import Logo from '../../img/logo_white.png';
+
 import styles from './MobileMenu.module.css';
 
 const MobileMenu = ({ isOpen, toggleMenu, scrollToSection }) => {
   return (
-    <div
-      className={`${styles.mobileMenu} ${
-        isOpen ? styles.menuOpen : ''
-      }`}
-    >
+    <div className={`${styles.mobileMenu} ${isOpen ? styles.menuOpen : ''}`}>
       <nav>
         <div className={styles.menuThumb}>
-          <a href="./" className={styles.menuLink}>Toptier Marketing</a>
+          <a href="./">
+            <img src={Logo} alt="logo compani" width={120} />
+          </a>
           <button className={styles.closeBtn} onClick={toggleMenu}>
             <FiX size={32} />
           </button>

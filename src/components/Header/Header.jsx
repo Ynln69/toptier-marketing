@@ -1,7 +1,10 @@
 import { useState } from 'react';
 import { FiMenu, FiX } from 'react-icons/fi'; 
-import classNames from 'classnames';
+
 import MobileMenu from '../MobileMenu/MobileMenu'; 
+import Logo from "../../img/logo_white.png"
+
+import classNames from 'classnames';
 import styles from './Header.module.css';
 
 const Header = ({ onOpenForm, scrollToSection }) => {
@@ -14,8 +17,8 @@ const Header = ({ onOpenForm, scrollToSection }) => {
   return (
     <header className={styles.header}>
       <div className={classNames(styles['header-wrapper'], 'container')}>
-        <a className={styles.logo} href="./">
-          Toptier Marketing
+        <a href="./">
+          <img src={Logo} alt="logo compani" width={120}/>
         </a>
         <nav>
           <ul className={styles.header_nav}>

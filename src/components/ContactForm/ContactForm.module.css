@@ -1,0 +1,32 @@
+.formContainer {
+  width: 100%;
+  padding: 20px;
+  border-radius: 10px;
+
+  background-color: #1c1c1b;
+}
+.submitContainer {
+  color: aliceblue;
+  text-align: center;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.formInput {
+  padding: 10px 50px 5px 10px;
+  border-color: transparent;
+  border-bottom: 2px solid rgb(94, 94, 93);
+  outline: none;
+  resize: none;
+
+  background-color: transparent;
+  color: #f3e200;
+}
+.formBtn {
+  border-radius: 8px;
+  padding: 12px;
+
+  background-color: #f3e200;
+}
