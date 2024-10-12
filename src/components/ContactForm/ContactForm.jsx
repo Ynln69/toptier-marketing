@@ -40,47 +40,50 @@ const ContactForm = ({ onClose }) => {
           Thank you! We will contact you shortly.
         </div>
       ) : (
-        <form onSubmit={handleSubmit} className={styles.form}>
-          <input
-            type="text"
-            name="name"
-            placeholder="Your name"
-            value={formData.name}
-            onChange={handleChange}
-            required
-            className={styles.formInput}
-          />
-          <input
-            type="email"
-            name="email"
-            placeholder="Email"
-            value={formData.email}
-            onChange={handleChange}
-            required
-            className={styles.formInput}
-          />
-          <input
-            type="number"
-            name="number"
-            placeholder="Number"
-            value={formData.number}
-            onChange={handleChange}
-            required
-            className={styles.formInput}
-          />
-          <textarea
-            name="comment"
-            placeholder="Comment"
-            value={formData.comment}
-            onChange={handleChange}
-            required
-            className={styles.formInput}
-            style={{ width: '100%', height: '150px' }}
-          />
-          <button type="submit" className={styles.formBtn}>
-            Submit
-          </button>
-        </form>
+        <>
+          <h2 className={styles.formTitle}>Your message</h2>
+          <form onSubmit={handleSubmit} className={styles.form}>
+            <input
+              type="text"
+              name="name"
+              placeholder="Your name"
+              value={formData.name}
+              onChange={handleChange}
+              required
+              className={styles.formInput}
+            />
+            <input
+              type="email"
+              name="email"
+              placeholder="Email"
+              value={formData.email}
+              onChange={handleChange}
+              required
+              className={styles.formInput}
+            />
+            <input
+              type="number"
+              name="number"
+              placeholder="Phone number"
+              value={formData.number}
+              onChange={handleChange}
+              required
+              className={styles.formInput}
+            />
+            <textarea
+              name="comment"
+              placeholder="Comment"
+              value={formData.comment}
+              onChange={handleChange}
+              required
+              className={styles.formInput}
+              style={{ width: '100%', height: '150px' }}
+            />
+            <button type="submit" className={styles.formBtn}>
+              Submit
+            </button>
+          </form>
+        </>
       )}
     </div>
   );

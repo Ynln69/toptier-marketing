@@ -1,13 +1,13 @@
 import { useState } from 'react';
-import { FiMenu, FiX } from 'react-icons/fi'; 
+import { FiMenu, FiX } from 'react-icons/fi';
 
-import MobileMenu from '../MobileMenu/MobileMenu'; 
-import Logo from "../../img/logo_white.png"
+import MobileMenu from '../MobileMenu/MobileMenu';
+import Logo from '../../img/logo_white.png';
 
 import classNames from 'classnames';
 import styles from './Header.module.css';
 
-const Header = ({ onOpenForm, scrollToSection }) => {
+const Header = ({ scrollToSection, onApplyClick }) => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   const toggleMenu = () => {
@@ -18,7 +18,7 @@ const Header = ({ onOpenForm, scrollToSection }) => {
     <header className={styles.header}>
       <div className={classNames(styles['header-wrapper'], 'container')}>
         <a href="./">
-          <img src={Logo} alt="logo compani" width={120}/>
+          <img src={Logo} alt="logo compani" width={120} />
         </a>
         <nav>
           <ul className={styles.header_nav}>
@@ -69,12 +69,9 @@ const Header = ({ onOpenForm, scrollToSection }) => {
             </li>
           </ul>
         </nav>
-        <a
-          className={styles.header_button}
-          href="mailto:info@toptier-marketing.com"
-        >
+        <button className={styles.header_button} onClick={onApplyClick}>
           Ask a Question
-        </a>
+        </button>
         <button
           type="button"
           className={styles.header_burger}

@@ -5,7 +5,7 @@ import 'aos/dist/aos.css';
 import classNames from 'classnames';
 import styles from './Footer.module.css';
 
-const Footer = ({ setRef }) => {
+const Footer = ({ setRef, onApplyClick }) => {
   const footerRef = useRef(null);
 
   useEffect(() => {
@@ -47,12 +47,9 @@ const Footer = ({ setRef }) => {
             <p className={styles.questionText}>
               If you are interested in working together, contact us.
             </p>
-            <a
-              className={styles.questionBtn}
-              href="mailto:info@toptier-marketing.com"
-            >
+            <button className={styles.questionBtn} onClick={onApplyClick}>
               Ask a Question
-            </a>
+            </button>
           </div>
         </div>
 

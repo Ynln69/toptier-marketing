@@ -22,20 +22,8 @@ const Modal = ({ children, onClose }) => {
       onClose();
     }
   };
-
-  const handelButtonClick = () => {
-    onClose();
-  };
-
   return createPortal(
     <div className={styles.overlay} onClick={handelBackdropClick}>
-      <button
-        className={styles.modalBtn}
-        type="button"
-        onClick={handelButtonClick}
-      >
-        X
-      </button>
       <div className={styles.modalContainer}>{children}</div>
     </div>,
     modalRoot

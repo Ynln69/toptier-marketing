@@ -1,25 +1,17 @@
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useEffect, useRef } from 'react';
 import classNames from 'classnames';
-
-import ContactForm from '../ContactForm/ContactForm';
-import Modal from '../Modal/Modal';
 
 import styles from './Vacancies.module.css';
 
-const Vacancies = ({ setRef }) => {
+const Vacancies = ({ setRef, onApplyClick }) => {
   const vacanciesRef = useRef(null);
-  const [isModalOpen, setIsModalOpen] = useState(false);
 
   useEffect(() => {
     AOS.init();
     setRef('vacancies', vacanciesRef);
   }, [setRef]);
-
-  const handleApplyClick = () => {
-    setIsModalOpen(true);
-  };
 
   return (
     <section ref={vacanciesRef} className={classNames('section')}>
@@ -46,10 +38,7 @@ const Vacancies = ({ setRef }) => {
                 research, and analyse performance data.
               </p>
             </div>
-            <button
-              className={styles.btn}
-              onClick={() => handleApplyClick('PPC Specialist')}
-            >
+            <button className={styles.btn} onClick={onApplyClick}>
               Apply for a job
             </button>
           </li>
@@ -67,10 +56,7 @@ const Vacancies = ({ setRef }) => {
                 and analyse performance to drive growth.
               </p>
             </div>
-            <button
-              className={styles.btn}
-              onClick={() => handleApplyClick('Affiliate Manager')}
-            >
+            <button className={styles.btn} onClick={onApplyClick}>
               Apply for a job
             </button>
           </li>
@@ -88,21 +74,12 @@ const Vacancies = ({ setRef }) => {
                 product quality through detailed reporting.
               </p>
             </div>
-            <button
-              className={styles.btn}
-              onClick={() => handleApplyClick('Manual QA')}
-            >
+            <button className={styles.btn} onClick={onApplyClick}>
               Apply for a job
             </button>
           </li>
         </ul>
       </div>
-
-      {isModalOpen && (
-        <Modal onClose={() => setIsModalOpen(false)}>
-          <ContactForm onClose={() => setIsModalOpen(false)} />
-        </Modal>
-      )}
     </section>
   );
 };
