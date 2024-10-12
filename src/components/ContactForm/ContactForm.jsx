@@ -37,7 +37,7 @@ const ContactForm = ({ onClose }) => {
     <div className={styles.formContainer}>
       {submitted ? (
         <div className={styles.submitContainer}>
-          Дякую! З вами зв'яжуться найближчим часом.
+          Thank you! We will contact you shortly.
         </div>
       ) : (
         <form onSubmit={handleSubmit} className={styles.form}>
