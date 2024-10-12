@@ -62,7 +62,7 @@ const ContactForm = ({ onClose }) => {
           <input
             type="number"
             name="number"
-            placeholder="Numder"
+            placeholder="Number"
             value={formData.number}
             onChange={handleChange}
             required
