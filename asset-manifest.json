@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "./static/css/main.42678269.css",
-    "main.js": "./static/js/main.9726f04e.js",
+    "main.js": "./static/js/main.26426bf8.js",
     "static/media/Gilroy-Regular.ttf": "./static/media/Gilroy-Regular.fa652e766b6a85a1f9cb.ttf",
     "static/media/Gilroy-Semibold.ttf": "./static/media/Gilroy-Semibold.41fa36c3c8e966b35423.ttf",
     "static/media/Gilroy-Bold.ttf": "./static/media/Gilroy-Bold.901a60fc2835c74fba67.ttf",
@@ -13,10 +13,10 @@
     "static/media/Tableu.png": "./static/media/Tableu.c16b8d95fbd5848df271.png",
     "index.html": "./index.html",
     "main.42678269.css.map": "./static/css/main.42678269.css.map",
-    "main.9726f04e.js.map": "./static/js/main.9726f04e.js.map"
+    "main.26426bf8.js.map": "./static/js/main.26426bf8.js.map"
   },
   "entrypoints": [
     "static/css/main.42678269.css",
-    "static/js/main.9726f04e.js"
+    "static/js/main.26426bf8.js"
   ]
 }
